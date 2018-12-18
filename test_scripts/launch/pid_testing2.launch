@@ -1,0 +1,15 @@
+<launch>
+    
+    <include file="$(find ackermann_vehicle_gazebo)/launch/ackermann_vehicle_teleop2.launch">
+    </include>
+    <node name="find_angle" pkg="test_scripts" type="find_angle.py" output="screen" >
+    </node>
+    
+
+    <node name="pid_test" pkg="test_scripts" type="pid_test.py" output="screen" >
+    </node>
+
+    <node name="rqt_plot" pkg="rqt_plot" type="rqt_plot"
+    args="/control_effort/data /state/data /setpoint/data" />
+   
+</launch>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<robot>
+  <material name="blue">
+    <color rgba="0.0 0.0 0.5 1.0"/>
+  </material>
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
+  <material name="battery_mat">
+    <color rgba="0 0 1 1"/>
+  </material>
+  <material name="chassis_mat">
+    <color rgba="0.5 0.5 0.5 1"/>
+  </material>
+  <material name="tire_mat">
+    <color rgba="0 0 0 1"/>
+  </material>
+
+</robot>
